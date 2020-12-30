@@ -1,0 +1,40 @@
+@font-face 
+  font-family: "Jura-b"
+  src: url("./font/Jura/Jura-Bold.ttf")
+
+@font-face 
+  font-family: "Jura-m"
+  src: url("./font/Jura/Jura-Medium.ttf")
+
+body
+  background-image: linear-gradient(to right, lightblue, skyblue, lightblue)
+
+.App
+  font-family: "Jura-m"
+  width: 100vw
+  min-height: 100vh
+  min-width: 300px
+  background-image: linear-gradient(to right, lightblue, skyblue, lightblue)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  
+  .page-name
+    display: block
+    text-align: center
+    margin: 35px 0px
+    font-size: 19px
+    font-family: "Jura-b"
+    color: #3c3c3c
+    transition-duration: 0.3s
+    cursor: default
+    position: relative
+    &::after
+      content: "<"
+    &::before
+      content: ">"
+    &:hover
+      color: black
+            
+          
+        
